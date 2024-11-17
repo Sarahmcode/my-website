@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//images.utk.edu/styles/thehill/v2019.20191009.css">
+</head>
+
+<body>
+<!-- Accessibility and Navigation Enhancements -->
+<div id="orange-bar" role="banner" aria-label="University of Tennessee Orange Bar"></div>
+<a class="sr-only sr-only-focusable" href="#content" title="Skip to main content">Skip to content</a>
+
+<!-- Header Section with Role -->
+<header id="section1" role="banner">
+    <img src="https://brand.utk.edu/wp-content/uploads/2019/02/University-CenteredLogo-RGB.png" alt="University of Tennessee Logo" width="200" height="200">
+    <h1>Sarah Mallicote</h1>
+</header>
+
+<!-- Navigation with ARIA Role and Label -->
+<nav role="navigation" aria-label="Main Navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="course.html" aria-current="page">Course</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content Section with Accessible Table -->
+<main id="content" role="main">
+    <section id="courses" aria-labelledby="courses-heading">
+        <h2 id="courses-heading">My Courses</h2>
+        <table border="1">
+            <caption>List of courses Sarah Mallicote is taking, including department, course number, title, and hours</caption>
+            <thead>
+            <tr>
+                <th scope="col"><i>Course Department</i></th>
+                <th scope="col"><i>Course Number</i></th>
+                <th scope="col"><i>Course Title</i></th>
+                <th scope="col"><i>Course Hours</i></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Communication Studies</td>
+                <td>CMST 240</td>
+                <td>Business and Professional Communication</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Information Sciences</td>
+                <td>INSC 201</td>
+                <td>Foundations of Information Technology</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Information Sciences</td>
+                <td>INSC 311</td>
+                <td>User-Centered Design</td>
+                <td>3</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<!-- System Sign-Off Section -->
+<div id="system-indicia" role="complementary" aria-label="System Sign Off">
+    <!-- UTK required footer or sign-off content goes here -->
+</div>
+
+<!-- Single Unified Footer Section with Content Info Role -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div id="siteinfo">
+        <div id="meta-info">
+            <p>
+                <strong class="sitetitle">University of Tennessee</strong><br>
+                <a href="http://utk.edu">College of Wherever</a>
+            </p>
+        </div>
+    </div>
+    <p>&copy; 2020 <i>Sarah Mallicote</i>. Contact me at <a href="mailto:smallic5@vols.utk.edu">smallic5@vols.utk.edu</a></p>
+</footer>
+
+<!-- Required JavaScript Files -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="//images.utk.edu/scripts/thehill/v2019.20191009.js"></script>
+</body>
+</html>
+
+
